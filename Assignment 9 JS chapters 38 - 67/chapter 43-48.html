@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9 - Chapter 43-48</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#" onclick="alert('A link is clicked')">Click it!</a>
+
+<h3>Click an image to show alert!</h3>
+    <div class="img-container">
+       
+        <img src="images/adidas.jpg" alt="image" onclick="alert('Adidas Yeezy')">
+        <img src="images/nike air jorden 1.jpg" alt="image" onclick="alert('Nike Jorden 1')">
+
+        <img src="images/air jorden 2.jpg" alt="image" onclick="alert('Nike Air Jorden 2')">
+    </div>
+
+    <div class="student-records">
+        <table>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+            <tr class="tr">
+                <td>0</td>
+                <td>Syed</td>
+                <td>8</td>
+                <td><button onclick="deleteRow();">delete</button></td>
+            </tr>
+            <tr class="tr">
+                <td>1</td>
+                <td>Ali</td>
+                <td>4</td>
+                <td><button onclick="deleteRow();">delete</button></td>
+            </tr>
+            <tr class="tr">
+                <td>2</td>
+                <td>Jawwad</td>
+                <td>6</td>
+                <td><button onclick="deleteRow();">delete</button></td>
+            </tr>
+            <tr class="tr">
+                <td>0</td>
+                <td>Zaidi</td>
+                <td>10</td>
+                <td><button onclick="deleteRow();">delete</button></td>
+            </tr>
+
+        </table>
+    </div>
+        <h3>Mouseover & Mouseout on image to change it</h3>
+        
+    <div class="img-container">
+
+        <img src="images/open-neon-preview.jpg" alt="image" onmouseover="src='images/yuiizaa-september-preview.jpg'"
+            onmouseout="src='images/open-neon-preview.jpg'">
+        <img src="images/valeriia-bugaiova-preview.jpg" alt="image"
+            onmouseover="src='images/landscape-photo-of-night-city-preview.jpg'"
+            onmouseout="src='images/valeriia-bugaiova-preview.jpg'">
+        <img src="images/yuiizaa-september-preview.jpg" alt="image" onmouseover="src='images/chester-wade-preview.jpg'"
+            onmouseout="src='images/yuiizaa-september-preview.jpg'">
+    </div>
+
+    <div class="counter-container">
+        <div class="counter">0</div>
+        <button onclick="increaseCounter();">+</button>
+        <button onclick="decreaseCounter();">-</button>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
